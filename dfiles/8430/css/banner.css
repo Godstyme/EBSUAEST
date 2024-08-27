@@ -1,0 +1,385 @@
+.banner{
+	height:480px;
+	position:relative;
+	overflow:hidden;
+}
+/*轮播图下方文字*/
+.aui-banner-news {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    background-color: #6F6E78\9;
+	z-index:999;
+	
+}
+
+.aui-banner-news-box {
+    margin: 0 auto;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.aui-banner-news-box ul {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    vertical-align: top;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.aui-banner-news-box ul li {
+    box-sizing: border-box;
+    display: table-cell;
+    padding: 15px 0 0px 0;
+    color: #fff;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    width: 165px;
+	text-align: center;
+}
+
+.aui-banner-news-box ul li:first-child {
+    border-left: 0;
+}
+
+.aui-banner-news-box ul li a {
+    font-size: 14px;
+    line-height: 35px;
+    color: #fff;
+	text-align: center;
+}
+
+.aui-bar-pic {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    text-align: center;
+	margin:0 auto;
+}
+
+.aui-bar-pic img {
+    width: 100%;
+    height: auto;
+    border: none;
+    vertical-align: middle;
+}
+
+.aui-bar-title {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #fff;
+	text-align: center;
+}
+
+.aui-bar-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #fff;
+    overflow: hidden;
+    word-wrap: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.aui-banner-news-box ul li:hover {
+    background-color: rgba(255,255,255,0.05);
+}
+.wap-aui-banner-news{ overflow:hidden;}
+.wap-aui-banner-news .item-icon {
+	width: 62px;
+	margin: 0 auto;
+	height: 62px;
+	border-radius: 36px;
+	background: #002D56;
+	text-align: center;
+	margin-bottom: 10px
+}
+
+.wap-aui-banner-news .item-icon img {
+	width: 32px;
+	height: 32px;
+	margin-top: 15px
+}
+
+.wap-aui-banner-news .item-title {
+	font-size: 14px;
+	color: #242A33;
+	text-align: center;
+}
+
+
+@media only screen and (max-width:1600px) and (min-width:1000px) {
+	.banner{
+		height:650px;
+	}
+}
+@media only screen and (max-width:1000px) and (min-width:640px) {
+	.banner{
+		height:450px;
+	}
+	/*.aui-banner-news-box ul {
+		display: block;
+		width: 100%;
+		vertical-align: top;
+		white-space: nowrap;
+		text-align: center;
+	}
+	
+	.aui-banner-news-box ul li {
+		box-sizing: border-box;
+		padding: 15px 0 0px 0;
+		color: #fff;
+		border-left: 1px solid rgba(255,255,255,0.2);
+		width: 165px;
+		text-align: center;
+	}*/
+}
+@media only screen and (max-width:640px) and (min-width:0px) {
+	.banner{
+		height:370px;
+	}
+	.flickerplate .arrow-navigation {
+		width:10%;
+	}
+	/*.aui-banner-news-box ul {
+		display: block;
+		table-layout: auto;
+		width: 100%;
+		vertical-align: top;
+		white-space: nowrap;
+		text-align: center;
+	}
+	
+	.aui-banner-news-box ul li {
+		box-sizing: border-box;
+		display: inline;
+		float: left;
+		padding: 15px 0 0px 0;
+		color: #fff;
+		border-left: 1px solid rgba(255,255,255,0.2);
+		width: 50%;
+		text-align: center;
+	}*/
+}
+.flickerplate {
+	position:relative;
+	width:100%;
+	height:100%;
+	background-color:#e6e6e6;
+	overflow:hidden;
+}
+.flickerplate ul.flicks {
+	width:10000%;
+	height:100%;
+	padding:0px;
+	margin:0px;
+	list-style:none
+}
+.flickerplate ul.flicks>li {
+	float:left;
+	width:1%;
+	height:100%;
+	background-position:center;
+	background-size:cover;
+	display:table
+}
+.flickerplate ul.flicks>li .flick-inner {
+	height:100% !important;
+	padding:10px;
+	color:#fff;
+	display:table-cell;
+	vertical-align:middle
+}
+.flickerplate ul.flicks>li .flick-inner .flick-content {
+	max-width:68.75em;
+	margin-left:auto;
+	margin-right:auto
+}
+.flickerplate ul.flicks>li .flick-title {
+	padding:0px 0px;
+	font-size:2.778em;
+	line-height:1.995em;
+	text-align:center
+}
+@media only screen and (max-width: 43.813em) {
+.flickerplate ul.flicks>li .flick-title {
+font-size:1.667em
+}
+}
+.flickerplate ul.flicks>li .flick-sub-text {
+	padding:5px;
+	font-weight:300;
+	line-height:2.5em;
+	color:rgba(255, 255, 255, 0.8);
+	text-align:center
+}
+.flickerplate ul.flicks>li .flick-title span.flick-block-text, .flickerplate ul.flicks>li .flick-sub-text span.flick-block-text {
+	padding:12px 18px;
+	background-color:rgba(0, 0, 0, 0.6)
+}
+.flickerplate .arrow-navigation {
+	position:absolute;
+	height:80%;
+	width:60px;
+	top:10%;
+	z-index:100;
+}
+.flickerplate .arrow-navigation .arrow {
+	display:block;
+	height:100%;
+	width:100%;
+	-webkit-transition:all 0.2s ease-out;
+	-moz-transition:all 0.2s ease-out;
+	-o-transition:all 0.2s ease-out;
+	-ms-transition:all 0.2s ease-out;
+	transition:all 0.2s ease-out
+}
+.flickerplate .arrow-navigation:hover, .flickerplate .arrow-navigation .arrow:hover {
+	cursor:pointer
+}
+.flickerplate .arrow-navigation.left {
+	left:0%
+}
+.flickerplate .arrow-navigation.left .arrow {
+	opacity:1 !important;
+	margin:0px 0px 0px 0%;
+	background-image:url(../images/max_prev.png);
+	background-repeat:no-repeat;
+	background-position:center
+}
+.flickerplate .arrow-navigation.right {
+	right:0%
+}
+.flickerplate .arrow-navigation.right .arrow {
+	opacity:1 !important;
+	margin:0px 0px 0px 0%;
+	background-image:url(../images/max_next.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.flickerplate .arrow-navigation.left.hover .arrow {
+	opacity:1;
+	margin:0px 0px 0px 0%;
+	background:url(../images/max_prev_hover.png);
+	background-repeat:no-repeat;
+	background-position: center center;
+}
+.flickerplate .arrow-navigation.right.hover .arrow {
+	opacity:1;
+	margin:0px 0px 0px 0%;
+	background:url(../images/max_next_hover.png);
+	background-repeat:no-repeat;
+	background-position: center center;
+}
+.flickerplate .dot-navigation {
+	position:absolute;
+	bottom:15px;
+	width:100%;
+	text-align:center;
+	z-index:100
+}
+.flickerplate .dot-navigation ul {
+	text-align:center;
+	list-style:none;
+	padding:0px 15px
+}
+.flickerplate .dot-navigation ul li {
+	display:inline-block;
+	float:none
+}
+.flickerplate .dot-navigation .dot {
+	width:14px;
+	height:14px;
+	margin:0px 6px;
+	background-color:rgba(255, 255, 255, 0.3);
+	border-radius:50%;
+	-o-border-radius:50%;
+	-ms-border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	-webkit-transition:background-color 0.2s ease-out;
+	-moz-transition:background-color 0.2s ease-out;
+	-o-transition:background-color 0.2s ease-out;
+	-ms-transition:background-color 0.2s ease-out;
+	transition:background-color 0.2s ease-out
+}
+.flickerplate .dot-navigation .dot:hover {
+	cursor:pointer;
+	background-color:rgba(255, 255, 255, 0.6)
+}
+.flickerplate .dot-navigation .dot.active {
+	background-color:#fff;
+}
+.flickerplate .dot-navigation.left, .flickerplate .dot-navigation.left ul {
+	text-align:left
+}
+.flickerplate .dot-navigation.right, .flickerplate .dot-navigation.right ul {
+	text-align:right
+}
+.flickerplate.flicker-theme-dark .dot-navigation .dot {
+	background-color:rgba(0, 0, 0, 0.12)
+}
+.flickerplate.flicker-theme-dark .dot-navigation .dot:hover {
+	background-color:rgba(0, 0, 0, 0.6)
+}
+.flickerplate.flicker-theme-dark .dot-navigation .dot.active {
+	background-color:#000
+}
+.flickerplate.flicker-theme-dark ul.flicks li .flick-inner {
+	color:rgba(0, 0, 0, 0.9)
+}
+.flickerplate.flicker-theme-dark ul.flicks li .flick-inner .flick-content .flick-sub-text {
+	color:rgba(0, 0, 0, 0.9)
+}
+.flickerplate.flicker-theme-dark ul.flicks li .flick-inner .flick-content .flick-title span.flick-block-text, .flickerplate.flicker-theme-dark ul.flicks li .flick-inner .flick-content .flick-sub-text span.flick-block-text {
+	background-color:rgba(255, 255, 255, 0.5)
+}
+.flickerplate ul.flicks li.flick-theme-dark .flick-inner {
+	color:rgba(0, 0, 0, 0.9)
+}
+.flickerplate ul.flicks li.flick-theme-dark .flick-inner .flick-content .flick-sub-text {
+	color:rgba(0, 0, 0, 0.9)
+}
+.flickerplate ul.flicks li.flick-theme-dark .flick-inner .flick-content .flick-title span.flick-block-text, .flickerplate ul.flicks li.flick-theme-dark .flick-inner .flick-content .flick-sub-text span.flick-block-text {
+	background-color:rgba(255, 255, 255, 0.5)
+}
+.flickerplate.animate-transform-slide ul.flicks {
+	-webkit-perspective:1000;
+	-webkit-backface-visibility:hidden;
+	transform:translate3d(0%, 0px, 0px);
+	-webkit-transform:translate3d(0%, 0px, 0px);
+	-webkit-transition:-webkit-transform 0.6s;
+	-o-transition:-o-transform 0.6s;
+	-moz-transition:-moz-transform 0.6s;
+	transition:transform 0.6s
+}
+.flickerplate.animate-transition-slide ul.flicks {
+	position:relative;
+	left:0%;
+	-webkit-transition:left 0.4s ease-out;
+	-moz-transition:left 0.4s ease-out;
+	-o-transition:left 0.4s ease-out;
+	-ms-transition:left 0.4s ease-out;
+	transition:left 0.4s ease-out
+}
+.flickerplate.animate-jquery-slide ul.flicks {
+	position:relative;
+	left:0%
+}
+.flickerplate.animate-scroller-slide {
+	padding-bottom:0px;
+	overflow:auto
+}
+.flickerplate.animate-scroller-slide ul.flicks {
+	position:auto
+}
+.flicker-example ul li a{
+	display:block;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+}
