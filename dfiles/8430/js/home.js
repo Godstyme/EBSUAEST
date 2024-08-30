@@ -1,5 +1,5 @@
 
-//广告图动画
+
 var _index1=1;
 $('.bannerBut ul li').mouseover(function(){
 	$(this).addClass('hover').siblings('li').removeClass('hover');
@@ -7,7 +7,7 @@ $('.bannerBut ul li').mouseover(function(){
 	$('.bannerCon .scroll').stop().animate({left:-_index1*1140},500);
 });
 
-//右边按钮
+
 $('.after img').click(function(){
 	_index1++;
 	if(_index1>6){
@@ -22,7 +22,6 @@ $('.after img').click(function(){
 });
 
 
-//左边按钮
 $('.before img').click(function(){
 	_index1--;
 	if(_index1<1){

@@ -382,5 +382,8 @@ font-size:1.667em
 	top:0px;
 	width:100%;
 	height:100%;
-    background: rgba(0, 0, 0, 0.12);
+    /* background-color: rgba(0,0,0,0.6); */
+    /* background-color: #6F6E78\9;
+	z-index:999; */
+	background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.1)) ;
 }
