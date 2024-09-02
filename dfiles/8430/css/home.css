@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'aaargh';
-    src: url('../fonts/AAARGH.eot'); /* IE9*/
-    src: url('../fonts/AAARGH.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/AAARGH.woff') format('woff'), /* chrome銆乫irefox */
-    url('../fonts/AAARGH.TTF')  format('truetype'), /* chrome銆乫irefox銆乷pera銆丼afari, Android, iOS 4.2+*/
-    url('../fonts/AAARGH.svg#svgFontName') format('svg'); /*  iOS 4.1- */
+    src: url('../fonts/AAARGH.eot'); 
+    src: url('../fonts/AAARGH.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/AAARGH.woff') format('woff'), 
+    url('../fonts/AAARGH.TTF')  format('truetype'),
+    url('../fonts/AAARGH.svg#svgFontName') format('svg'); 
 }
 .header {
 	box-shadow: 0 0 15px #938d8d;

@@ -87,7 +87,7 @@ function _onShowDynClicksBatch(xmlhttp, dynobjs)
 				{
 		        try
 		        {
-		            //针对2个内容重叠而且 id 相同时的处理方法
+		            
 		            var imgobjs = document.getElementsByName(dynobjs[i]);
 		            for(var j = 0; j < imgobjs.length; j++)
 		            {
@@ -108,7 +108,7 @@ function _onShowDynClicks(xmlhttp, dynobj)
         try
         {
             document.getElementById(dynobj).innerHTML = xmlhttp.responseText;
-            //针对2个内容重叠而且 id 相同时的处理方法
+           
             var imgobjs = document.getElementsByName(dynobj);
             if(imgobjs.length>0)
             { 

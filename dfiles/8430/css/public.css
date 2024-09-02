@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'MyriadPro';
     src: url('../fonts/MyriadPro.eot'); /* IE9*/
-    src: url('../fonts/MyriadPro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/MyriadPro.woff') format('woff'), /* chrome銆乫irefox */
-    url('../fonts/MyriadPro.ttf')  format('truetype'), /* chrome銆乫irefox銆乷pera銆丼afari, Android, iOS 4.2+*/
-    url('../fonts/MyriadPro.svg#svgFontName') format('svg'); /*  iOS 4.1- */
+    src: url('../fonts/MyriadPro.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/MyriadPro.woff') format('woff'), 
+    url('../fonts/MyriadPro.ttf')  format('truetype'), 
+    url('../fonts/MyriadPro.svg#svgFontName') format('svg');
 }
 body,p,ul,li,h1,h2,h3,h4,h5,table,tr,td,ol,div,form{
     margin:0;
@@ -245,7 +245,7 @@ p{ font-size:16px;}
 .focus .hd ul .on{ background: #ffffff; color:#FFFFFF;  }
 .focus .bd{ position:relative; z-index:0; }
 .focus .bd li img{ width:100%;  height:auto; }
-.focus .bd li a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0.5); /* 取消链接高亮 */ }
+.focus .bd li a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0.5);  }
 
 
 .goCh,.goPortal,.goSchool,.goMap,.goOld{

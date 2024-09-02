@@ -1,13 +1,3 @@
-/*
-*  图片裁剪
-*  imgdom：图片dom对象 也可以传this
-*  cutImgType(裁剪当时): 居中裁剪autocut  按比例缩放Scaling  拉伸stretching
-*  cutImgParent: 父类选择器 例如div标签的id是mydiv  那么这里就填 #mydiv
-*
-*  例如：
-*  cutImg(this,"autocut","#mydiv")  //传父标签
-*  cutImg(this,"autocut")  //不传父标签
-*/
 function cutImg(imgdom,CutImgType,cutImgParent){
     $(imgdom).each(function(){
         var $this=$(imgdom);
@@ -15,7 +5,7 @@ function cutImg(imgdom,CutImgType,cutImgParent){
 	    $this.css("cssText","");
 
         var objHeight,objWidth;
-        //IE7+浏览器都能兼容的函数封装:获取图片的原始尺寸
+        
         if($this[0].naturalWidth && $this[0].naturalHeight) {
             objWidth = $this[0].naturalWidth;
             objHeight = $this[0].naturalHeight;
@@ -28,15 +18,15 @@ function cutImg(imgdom,CutImgType,cutImgParent){
 
         var parentHeight,parentWidth;
         if (cutImgParent!=undefined){
-            parentHeight=$this.parents(cutImgParent).eq(0).height();//图片父容器高度
-            parentWidth=$this.parents(cutImgParent).eq(0).width();//图片父容器宽度
+            parentHeight=$this.parents(cutImgParent).eq(0).height();
+            parentWidth=$this.parents(cutImgParent).eq(0).width();
         }else{
             if($this.parent().prop('tagName')=='a' || $this.parent().prop('tagName')=='A'){
-                parentHeight=$this.parent().parent().height();//图片父容器高度
-                parentWidth=$this.parent().parent().width();//图片父容器宽度
+                parentHeight=$this.parent().parent().height();
+                parentWidth=$this.parent().parent().width();
             }else{
-                parentHeight=$this.parent().height();//图片父容器高度
-                parentWidth=$this.parent().width();//图片父容器宽度
+                parentHeight=$this.parent().height();
+                parentWidth=$this.parent().width();
             }
         }
 
@@ -44,7 +34,7 @@ function cutImg(imgdom,CutImgType,cutImgParent){
 
 		if(CutImgType == "autocut"){
 			var ratio=objHeight/objWidth;
-			if(objHeight > objWidth) {//赋值宽高
+			if(objHeight > objWidth) {
                 if(parentWidth*ratio < parentHeight){
                     imgCssText = "width:"+parentHeight/ratio+"px!important;height:"+parentHeight+"px!important;";
                 }else{
@@ -69,8 +59,6 @@ function cutImg(imgdom,CutImgType,cutImgParent){
                 }
 			}
 
-/*            objHeight=$this[0].height;//重新获取宽高
-            objWidth=$this[0].width;*/
             objHeight = $this.css("height").replace("px","");
             objWidth = $this.css("width").replace("px","");
 
@@ -110,19 +98,19 @@ function cutImg(imgdom,CutImgType,cutImgParent){
 
                 if(widthrate > 1 || heightrate > 1 || widthrate < 1 || heightrate < 1)
                 {
-                    if(CutImgType == "Scaling")//按比例缩放
+                    if(CutImgType == "Scaling")
                     {
                         var rate = Math.max(widthrate, heightrate);
                         imgwidth = Math.max(1, Math.min(objWidth/rate, parentWidth));
                         imgheight = Math.max(1, Math.min(objHeight/rate, parentHeight));
                     }
-                    else//拉伸
+                    else
                     {
                         imgwidth = parentWidth;
                         imgheight = parentHeight;
                     }
                 }
-                else //大小合适
+                else 
                 {
                     imgwidth = parentWidth;
                     imgheight = parentHeight;

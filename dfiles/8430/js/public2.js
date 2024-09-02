@@ -30,13 +30,11 @@ $(function(){
     });    
 });
 function fadeSlider(_this,imgnote,numnote,timebigBanner) {
-    //初始化参数 
-    //var timebigBanner = 3000;
-    //获取图片总数
+       //var timebigBanner = 3000;
     var screenpanelbigBanner = _this.find(imgnote);
     var btnpanelbigBanner =  _this.find(numnote);
     var lenbigBanner = screenpanelbigBanner.size();
-    //设置默认显示图片
+    
     var templateLibigBanner = [];
     var indexbigBanner = 0;
     var timesetbigBanner;
@@ -46,8 +44,7 @@ function fadeSlider(_this,imgnote,numnote,timebigBanner) {
     }
     btnpanelbigBanner.append(templateLibigBanner.join("")+'<div class="clearfix"></div>');
     btnpanelbigBanner.find("p").eq(0).addClass('act');
-    //自动轮换计时器
-    //初始化按钮
+   
     _this.hover(function() {
         if (timesetbigBanner) {
             clearInterval(timesetbigBanner);
@@ -62,7 +59,7 @@ function fadeSlider(_this,imgnote,numnote,timebigBanner) {
             }, timebigBanner);
         }
     });
-    //自动开始切换
+  
     if(lenbigBanner!=1){
         var timesetbigBanner = setInterval(function() { 
             if(indexbigBanner<lenbigBanner-1)
@@ -71,8 +68,7 @@ function fadeSlider(_this,imgnote,numnote,timebigBanner) {
             swiftbigBanner(indexbigBanner);
             
         }, timebigBanner);      
-        //调整位置居中
-        //按钮事件绑定
+        
         btnpanelbigBanner.find("p").click(function() {
             indexbigBanner = btnpanelbigBanner.find("p").index(this);
             btnpanelbigBanner.find("p").removeClass('act');
